@@ -3,4 +3,13 @@
     <string name="title_activity_tabbedclass">Tabbedclass</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string-array name="course_names">
+        <item>Software Engineering (CEN4010)</item>
+        <item>Engineering Math(MAP3305)</item>
+        <item>int to emb sys(CDA4630)</item>
+        <item>circuits 1(EEL3111)</item>
+        <item>comp op sys(COP4610)</item>
+        <item>Software Hardware codesign(CEN6653)</item>
+
+    </string-array>
 </resources>

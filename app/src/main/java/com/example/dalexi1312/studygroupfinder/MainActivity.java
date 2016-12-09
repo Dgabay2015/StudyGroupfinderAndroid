@@ -6,12 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import static android.R.color.black;
+
 
 public class MainActivity extends AppCompatActivity {
     private Button mSignInButton;
     private Button mChooseSignInButton;
+    private Button mChooseSignUpButton;
 
-//this is a comment for testingfghgfngfngf
+
+
+    //this is a comment for testingfghgfngfngf
     //now another comment9090909090908
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         mSignInButton =(Button) findViewById(R.id.signInButton);
         mChooseSignInButton =(Button) findViewById(R.id.chooseSignInButton);
+        mChooseSignUpButton =(Button) findViewById(R.id.signUpButton);
+
 
 
         mSignInButton.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +39,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mChooseSignInButton.setTextColor(0xFF002D62);
+                mChooseSignUpButton.setTextColor(0xFF000000);
+
+            }
+        });
+        mChooseSignUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mChooseSignUpButton.setTextColor(0xFF002D62);
+                mChooseSignInButton.setTextColor(0xFF000000);
+
+
             }
         });
     }

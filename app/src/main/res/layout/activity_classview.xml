@@ -45,4 +45,51 @@
             android:id="@+id/profileTabButton"/>
     </android.support.design.widget.TabLayout>
 
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/floatingActionButtonAddGroup"
+        android:layout_above="@+id/tabLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:backgroundTint="@color/faublue"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:id="@+id/editText2"
+        android:layout_alignRight="@+id/floatingActionButtonAddGroup"
+        android:layout_alignEnd="@+id/floatingActionButtonAddGroup"
+        android:hint="Software Engineering  - CEN4010"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_search_grey_600_24dp"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_toEndOf="@+id/editText2"/>
+
+    <TextView
+        android:text="Results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/faublue"/>
+
 </RelativeLayout>
