@@ -23,7 +23,7 @@ public class ClassesViewer extends AppCompatActivity {
         });
     }
     private void goToClassView() {
-        Intent intent = new Intent(this, classview.class);
+        Intent intent = new Intent(this, TabsView.class);
         startActivity(intent);
     }
 }
