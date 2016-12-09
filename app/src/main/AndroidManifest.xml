@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".AddGroup">
         </activity>
+        <activity android:name=".MyGroups">
+        </activity>
     </application>
 
 </manifest>
