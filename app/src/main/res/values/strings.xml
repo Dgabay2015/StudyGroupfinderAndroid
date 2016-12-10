@@ -3,6 +3,7 @@
     <string name="title_activity_tabbedclass">Tabbedclass</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="no_groups">There is no groups in your account</string>
     <string-array name="course_names">
         <item>Software Engineering (CEN4010)</item>
         <item>Engineering Math(MAP3305)</item>
