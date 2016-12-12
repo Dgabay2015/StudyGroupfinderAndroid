@@ -92,4 +92,14 @@
         android:layout_centerHorizontal="true"
         android:textColor="@color/faublue"/>
 
+    <TextView
+        android:text="This should be the name of the class selected in previous page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:id="@+id/showClassNameTextView"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
 </RelativeLayout>
