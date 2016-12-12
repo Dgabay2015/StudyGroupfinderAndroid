@@ -5,12 +5,24 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="no_groups">There is no groups in your account</string>
     <string-array name="course_names">
-        <item>Software Engineering (CEN4010)</item>
+        <item>Principles of Software Engineering (CEN 4010)</item>
         <item>Engineering Math(MAP3305)</item>
-        <item>int to emb sys(CDA4630)</item>
-        <item>circuits 1(EEL3111)</item>
-        <item>comp op sys(COP4610)</item>
+        <item>Intro to embedded  systems(CDA4630)</item>
+        <item>Circuits 1(EEL3111)</item>
+        <item>Comp op sys(COP4610)</item>
         <item>Software Hardware codesign(CEN6653)</item>
+        <item>Analysis of Structures (CES 3102C)</item>
+        <item>Computer Animation (CAP 4034)</item>
+        <item>Introduction to Artificial Intelligence (CAP 4630)</item>
+        <item>Introduction to Logic Design (CDA 3201C)</item>
+        <item>CAD-Based Computer Design (CDA 4204)</item>
+        <item>Introduction to VLSI (CDA 4210)</item>
+        <item>Introduction to Embedded System Design (CDA 4630)</item>
+        <item>Introduction to Computer Systems Performance Evaluation (CEN 4400)</item>
+        <item>Software Engineering Project (CEN 4910)</item>
+        <item>Introduction to Data Communications (CNT 4104)</item>
+        <item>Introduction to Data and Network Security (CNT 4403)</item>
+        <item>Introduction to Programming in C (COP 2220)</item>
 
     </string-array>
 </resources>

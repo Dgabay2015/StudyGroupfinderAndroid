@@ -15,37 +15,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/wallpaper_20090701043912_7972630132"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/imageView4"
-        android:layout_marginTop="0dp"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/signUpButton"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/usernameEditText"
-        android:hint="username/email"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:layout_below="@+id/usernameEditText"
-        android:layout_alignLeft="@+id/usernameEditText"
-        android:layout_alignStart="@+id/usernameEditText"
-        android:layout_marginTop="20dp"
-        android:id="@+id/passwordEditText"
-        android:hint="password"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/sym_action_email"
         android:layout_above="@+id/passwordEditText"
         android:layout_toLeftOf="@+id/usernameEditText"
@@ -64,25 +33,43 @@
         android:layout_toStartOf="@+id/passwordEditText"/>
 
     <TextView
-        android:text="22 Groups"
+        android:text="FAU"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView4"
-        android:layout_toLeftOf="@+id/signUpButton"
-        android:layout_toStartOf="@+id/signUpButton"
-        android:id="@+id/amountOfGroupsTextView"/>
+        android:layout_above="@+id/amountOfGroupsTextView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/schoolNameTextView"/>
 
-    <Button
-        android:text="Sign up"
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signUpButton"
-        android:background="@android:color/white"
-        android:layout_below="@+id/amountOfGroupsTextView"
-        android:layout_alignRight="@+id/imageView4"
-        android:layout_alignEnd="@+id/imageView4"
-        android:radius="480dp">
-    </Button>
+        app:srcCompat="@drawable/fauogo"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordEditText"
+        android:hint="password"
+        android:layout_above="@+id/signInButton"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_marginBottom="18dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/usernameEditText"
+        android:hint="username/email"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:text="Sign in"
@@ -92,19 +79,35 @@
         android:background="@android:color/white"
         android:textColor="@color/faublue"
         android:paddingTop="0dp"
-        android:layout_below="@+id/amountOfGroupsTextView"
-        android:layout_toLeftOf="@+id/amountOfGroupsTextView"
-        android:layout_toStartOf="@+id/amountOfGroupsTextView"/>
+        android:layout_alignBaseline="@+id/signUpButton"
+        android:layout_alignBottom="@+id/signUpButton"
+        android:layout_alignLeft="@+id/usernameEditText"
+        android:layout_alignStart="@+id/usernameEditText"/>
 
-    <TextView
-        android:text="FAU"
+    <Button
+        android:text="Sign up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/amountOfGroupsTextView"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/schoolNameTextView"/>
+        android:id="@+id/signUpButton"
+        android:background="@android:color/white"
+        android:radius="480dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/usernameEditText"
+        android:layout_toRightOf="@+id/schoolNameTextView"
+        android:layout_toEndOf="@+id/schoolNameTextView"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp">
+    </Button>
 
-
+    <TextView
+        android:text="22 Groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountOfGroupsTextView"
+        android:layout_above="@+id/chooseSignInButton"
+        android:layout_alignRight="@+id/schoolNameTextView"
+        android:layout_alignEnd="@+id/schoolNameTextView"
+        android:layout_marginBottom="28dp"/>
 
     <Button
         android:text="Sign in"
@@ -115,20 +118,19 @@
         android:background="@drawable/button_circular"
         android:height="20dp"
         android:radius="480dp"
-        android:layout_below="@+id/passwordEditText"
+        android:layout_above="@+id/facebookImageButton"
         android:layout_alignLeft="@+id/facebookImageButton"
         android:layout_alignStart="@+id/facebookImageButton"
-        android:layout_alignRight="@+id/facebookImageButton"
-        android:layout_alignEnd="@+id/facebookImageButton"
-        android:layout_marginTop="15dp"/>
+        android:layout_alignRight="@+id/signUpButton"
+        android:layout_alignEnd="@+id/signUpButton"/>
+
     <ImageButton
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:srcCompat="@drawable/facebooklogin"
     android:id="@+id/facebookImageButton"
-    android:layout_below="@id/signInButton"
     android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="5dp"/>
+    android:layout_alignRight="@+id/signUpButton"
+    android:layout_alignEnd="@+id/signUpButton"/>
 
 </RelativeLayout>
