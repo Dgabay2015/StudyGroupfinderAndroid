@@ -21,30 +21,6 @@
         android:textSize="30sp"
         android:textAlignment="center"/>
 
-    <Button
-        android:text=" CEN4010 Software Engineering                                             3 groups"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/classesFoundButton"
-        android:layout_below="@+id/topOfClassesViewText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:background="?attr/colorControlHighlight"
-        android:lines="2"
-        />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/enterClassPrefixEditText"
-        android:hint="type class prefix or name here"
-        android:singleLine="false"
-        android:layout_below="@+id/classesFoundButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
-
     <TextView
         android:text="You can always search for classes you haven't enrolled in"
         android:layout_width="wrap_content"
@@ -63,6 +39,27 @@
         android:background="@color/faublue"
         android:textColor="@android:color/white"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/enterClassPrefixEditText"
+        android:hint="type class prefix or name here"
+        android:singleLine="false"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/allClassesspinner"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/allClassesspinner"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/topOfClassesViewText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
 

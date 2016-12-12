@@ -18,7 +18,8 @@
         app:srcCompat="@drawable/wallpaper_20090701043912_7972630132"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/imageView4"/>
+        android:id="@+id/imageView4"
+        android:layout_marginTop="0dp"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -103,13 +104,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/schoolNameTextView"/>
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/facebooklogin"
-        android:id="@+id/facebookImageButton"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+
 
     <Button
         android:text="Sign in"
@@ -119,12 +114,21 @@
         android:layout_width="200dp"
         android:background="@drawable/button_circular"
         android:height="20dp"
-        android:layout_above="@+id/facebookImageButton"
+        android:radius="480dp"
+        android:layout_below="@+id/passwordEditText"
         android:layout_alignLeft="@+id/facebookImageButton"
         android:layout_alignStart="@+id/facebookImageButton"
         android:layout_alignRight="@+id/facebookImageButton"
         android:layout_alignEnd="@+id/facebookImageButton"
-        android:radius="480dp"
-       />
+        android:layout_marginTop="15dp"/>
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/facebooklogin"
+    android:id="@+id/facebookImageButton"
+    android:layout_below="@id/signInButton"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dp"/>
 
 </RelativeLayout>
