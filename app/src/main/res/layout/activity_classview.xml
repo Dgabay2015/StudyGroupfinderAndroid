@@ -85,7 +85,7 @@
         android:layout_marginTop="17dp"
         android:id="@+id/groupsAvailableListView"
         android:layout_above="@+id/floatingActionButtonAddGroup"
-        android:background="#1fe5e5e5"/>
+        android:background="?attr/colorControlHighlight"/>
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"

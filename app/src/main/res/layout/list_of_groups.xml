@@ -8,37 +8,40 @@
                 android:paddingBottom="4dp"
                 android:paddingTop="4dp"
 
-                tools:background="@color/faublue">
+                tools:background="@color/com_facebook_button_login_silver_background_color_pressed">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
         app:srcCompat="@android:drawable/btn_star_big_on"
-        android:id="@+id/circleImageView"
+        android:id="@+id/gravatarImageView"
+        android:background="@color/faublue"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_dialog"
-        android:layout_alignParentTop="true"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:layout_toRightOf="@+id/circleImageView"
-        android:layout_toEndOf="@+id/circleImageView"
-        android:id="@+id/iconImageView"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/iconImageView"
-        android:layout_toEndOf="@+id/iconImageView"
-        android:id="@+id/nameTextView"
-        android:textColor="@android:color/white"
+        android:id="@+id/groupNameTextView"
+        android:textColor="@color/faublue"
         tools:text="Super studiers CEN4010"
-        android:textSize="22sp"/>
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/gravatarImageView"
+        android:layout_toEndOf="@+id/gravatarImageView"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:maxLength="14"/>
+
+    <TextView
+        android:text="Groupmembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/groupNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/amountOfGroupMembersTextView"
+        android:textSize="10sp"/>
 </RelativeLayout>

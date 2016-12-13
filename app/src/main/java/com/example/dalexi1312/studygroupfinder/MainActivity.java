@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
 import com.facebook.FacebookSdk;
 import static android.R.color.black;
 
@@ -13,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     private Button mSignInButton;
     private Button mChooseSignInButton;
     private Button mChooseSignUpButton;
+    //making a Group object
+    public Group mGroupTest;
+    ImageView mTestImageView;
 
 
 
@@ -52,10 +57,32 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //USING CONSTRUCTOR
+        //     public Group(String groupId,String nameOfGroup,String[]members,String meetingTimes,String locationName){
+        String[ ] members={"David", "Brandon", "danh","elizabeth","Newil"};
+        mTestImageView= (ImageView)findViewById(R.id.testingIconImageView);
+
+        mGroupTest = new Group("TestID","tESTpURPOSESgROUPnAME",members,"5:30pm","EE106");
+
+
+
+        //this was a function to add a group but then i added constructor above
+       // createTestGroup();
     }
+//the function that will generate a test group
+    private void createTestGroup() {
+        mGroupTest.setGroupId("TestID");//THIS GROUP Id IS TESTID
+        //String of members
+        String[ ] members={"David", "Brandon", "danh","elizabeth","Newil"};
+        mGroupTest.setMembers(members);
+        mGroupTest.setLocationName("EE106");
+        mGroupTest.setMeetingTimes("5:30pm");
+    }
+
     private void goToClassesView()
     {
         Intent intent = new Intent(this,ClassesViewer.class);
+
         startActivity(intent);
     }
 

@@ -49,15 +49,23 @@
         android:layout_toRightOf="@+id/editText3"
         android:layout_toEndOf="@+id/editText3"/>
 
-    <ImageView
+    <TextView
+        android:text="Meet up Location: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/slackscreen"
-        android:layout_marginTop="10dp"
-        android:id="@+id/imageView"
+        android:id="@+id/meetUpLocationtextView"
+        android:layout_marginTop="213dp"
         android:layout_below="@+id/groupNameTextView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/editText3"/>
+        android:layout_toStartOf="@+id/groupNameTextView"
+        android:layout_toLeftOf="@+id/groupNameTextView"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/meetUpLocationtextView"
+        android:layout_toRightOf="@+id/meetUpLocationtextView"
+        android:layout_toEndOf="@+id/meetUpLocationtextView"
+        android:id="@+id/meetUpSpotTextView"/>
 
 </RelativeLayout>

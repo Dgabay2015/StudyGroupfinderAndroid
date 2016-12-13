@@ -12,6 +12,7 @@ import android.widget.Spinner;
 public class ClassesViewer extends AppCompatActivity {
     private Button mClassesFoundButton;
     private Spinner mSpinner;
+    public static final String DAILY_FORECAST= "DAILY FORECAST";
     ArrayAdapter<CharSequence> mAdapter;
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     public String message;
@@ -54,6 +55,7 @@ public class ClassesViewer extends AppCompatActivity {
     private void goToClassView() {
         Intent intent = new Intent(this, classview.class);
         intent.putExtra(EXTRA_MESSAGE, message);
+
         startActivity(intent);
     }
 }
