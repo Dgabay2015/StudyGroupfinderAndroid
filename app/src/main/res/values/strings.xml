@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Study Group finder</string>
-    <string name="facebook_app_id">1225322920851244</string>
+<!--    <string name="facebook_app_id">1225322920851244</string>
 
-    <string name="fb_login_protocol_scheme">fb1225322920851244</string>
+    <string name="fb_login_protocol_scheme">fb1225322920851244</string>-->
 
     <string name="title_activity_tabbedclass">Tabbedclass</string>
     <string name="action_settings">Settings</string>
