@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dalexi1312.studygroupfinder.AddGroup">
+
+    <TextView
+        android:text="Create Your Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/createGroupTextView"
+        android:textSize="24sp"
+        android:textColor="@color/faublue"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText"
+        android:hint='example: "E-Math Studiers" '
+        android:textColor="@color/faublue"
+        android:layout_alignRight="@+id/createGroupTextView"
+        android:layout_alignEnd="@+id/createGroupTextView"/>
+
+    <TextView
+        android:text="Group Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:textColor="@color/faublue"
+        android:layout_below="@+id/createGroupTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:text="Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:textColor="@color/faublue"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerClasses"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"/>
+
+    <TextView
+        android:text="Are you the primary contact method for your group?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinnerClasses"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:id="@+id/textView4"
+        android:textColor="@color/faublue"/>
+
+    <Button
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:textColor="@color/faublue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp">
+
+
+        <RadioButton
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioButtonYes"
+            android:textColor="@color/colorPrimaryDark"
+            android:allowUndo="true"/>
+
+        <RadioButton
+            android:text="No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_toRightOf="@+id/radioButtonYes"
+            android:layout_toEndOf="@+id/radioButtonYes"
+            android:id="@+id/radioButtonNo"
+            android:textColor="@color/faublue"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/contactEditText"
+        android:hint="Contact email"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/buttonSubmit"
+        android:layout_alignStart="@+id/buttonSubmit"/>
+
+</RelativeLayout>
