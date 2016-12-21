@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabItem;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,17 +15,19 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.dalexi1312.studygroupfinder.adapters.ListAdapter;
+import com.example.dalexi1312.studygroupfinder.adapters.SwipeAdapter;
 
-public class classview extends AppCompatActivity {
+public class Classview extends AppCompatActivity {
     private FloatingActionButton maddGroup;
     private TextView mTextViewClassName;
     private ListView mListViewOfGroupsAvailable; //will be the list og groups you can be a part of based on yor class selection
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     public final static String EXTRA_GROUP = "EXTRA GROUP";
     public final static String EXTRA_POS = "EXTRA POS";
-
+    public TabLayout mTabLayout ;
     public int groupPicked;
     public String groupNamemessage;
+    ViewPager mViewPager;
 
     //dummy variable for now
 
@@ -56,14 +59,17 @@ public class classview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classview);
-        mListViewOfGroupsAvailable = (ListView)findViewById(R.id.groupsAvailableListView);
 
-        /*ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,groups);
-        mListViewOfGroupsAvailable.setAdapter(adapter);
-*/
+        mViewPager = (ViewPager)findViewById(R.id.view_pager);
+        SwipeAdapter swipeAdapter = new SwipeAdapter(getSupportFragmentManager());
+        mViewPager.setAdapter(swipeAdapter);
+
+        mTabLayout = (TabLayout)findViewById(R.id.tabLayout);
+        mTabLayout.setupWithViewPager(mViewPager);
+
+        mListViewOfGroupsAvailable = (ListView)findViewById(R.id.groupsAvailableListView);
         ListAdapter adapter = new ListAdapter(this,mGroups);
         mListViewOfGroupsAvailable.setAdapter(adapter);
-
 
 
         mTextViewClassName = (TextView)findViewById(R.id.showClassNameTextView ) ;

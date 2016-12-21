@@ -1,7 +1,6 @@
 package com.example.dalexi1312.studygroupfinder;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,11 +41,11 @@ public class GroupPage extends AppCompatActivity {
        // createTestGroup();
         mTextViewForGroupName=(TextView)findViewById(R.id.groupNameTextView);
         Intent intent = getIntent();
-        final String message = intent.getStringExtra(classview.EXTRA_MESSAGE);
+        final String message = intent.getStringExtra(Classview.EXTRA_MESSAGE);
 
 
-        final int groupPositionInArray = intent.getIntExtra(classview.EXTRA_POS,0);
-        Parcelable[ ] parcelables = intent.getParcelableArrayExtra(classview.EXTRA_GROUP);
+        final int groupPositionInArray = intent.getIntExtra(Classview.EXTRA_POS,0);
+        Parcelable[ ] parcelables = intent.getParcelableArrayExtra(Classview.EXTRA_GROUP);
        mGroups = Arrays.copyOf(parcelables, parcelables.length,Group[].class);
         mMeetupLocationTextView.setText(mGroups[groupPositionInArray].getLocationName());
         //to test if group object works i will put the name of test group in the group page header

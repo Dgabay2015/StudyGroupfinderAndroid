@@ -1,10 +1,12 @@
-package com.example.dalexi1312.studygroupfinder;
+package com.example.dalexi1312.studygroupfinder.Fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
+
+import com.example.dalexi1312.studygroupfinder.R;
 
 public class AlertDialogFragment extends DialogFragment {
 

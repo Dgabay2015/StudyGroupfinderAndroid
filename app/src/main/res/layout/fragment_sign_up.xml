@@ -2,7 +2,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height= "200dp"
-             tools:context="com.example.dalexi1312.studygroupfinder.FragmentOne">
+             tools:context="com.example.dalexi1312.studygroupfinder.Fragments.FragmentSignUp">
 
     <!-- TODO: Update blank fragment layout -->
 

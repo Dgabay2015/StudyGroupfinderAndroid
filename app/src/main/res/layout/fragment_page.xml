@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.dalexi1312.studygroupfinder.Fragments.PageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="My Groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/myGroupsTitle"
+        android:textSize="30sp"/>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="0dp"
+        android:id="@+id/tabLayout"
+        android:textAllCaps="false">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            android:icon="@drawable/ic_search_grey_600_24dp"
+            android:id="@+id/browseTabButton"
+            android:clickable="true"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Groups"
+            android:icon="@drawable/people"
+            android:id="@+id/myGroupsTabButton"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:icon="@drawable/ic_account_circle_grey_600_24dp"
+            android:id="@+id/profileTabButton"/>
+    </android.support.design.widget.TabLayout>
+</RelativeLayout>

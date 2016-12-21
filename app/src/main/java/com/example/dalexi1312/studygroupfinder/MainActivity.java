@@ -11,12 +11,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.facebook.FacebookSdk;
+import com.example.dalexi1312.studygroupfinder.Fragments.AlertDialogFragment;
+import com.example.dalexi1312.studygroupfinder.Fragments.FragmentSignIn;
+import com.example.dalexi1312.studygroupfinder.Fragments.FragmentSignUp;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         // the code below is responsible for changing the color of the text when you switch from sign in to sign up
 
         //implementing username/sign up frag
-        FragmentTwo f2 = new FragmentTwo();
+        FragmentSignIn f2 = new FragmentSignIn();
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fragmentContainer, f2);
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         mChooseSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTwo f2 = new FragmentTwo();
+                FragmentSignIn f2 = new FragmentSignIn();
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragmentContainer, f2);
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         mChooseSignUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentOne f1 = new FragmentOne();
+                FragmentSignUp f1 = new FragmentSignUp();
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragmentContainer,f1);

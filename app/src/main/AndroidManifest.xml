@@ -39,7 +39,7 @@
         </activity>
         <activity android:name=".ClassesViewer">
         </activity>
-        <activity android:name=".classview">
+        <activity android:name=".Classview">
         </activity>
         <activity android:name=".AddGroup">
         </activity>
