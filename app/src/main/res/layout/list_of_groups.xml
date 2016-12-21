@@ -44,4 +44,5 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/amountOfGroupMembersTextView"
         android:textSize="10sp"/>
+
 </RelativeLayout>

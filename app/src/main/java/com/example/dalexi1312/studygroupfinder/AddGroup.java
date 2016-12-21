@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -17,6 +18,7 @@ public class AddGroup extends AppCompatActivity {
     ArrayAdapter<CharSequence> mAdapter;
     private Button mAddGroupButton;
     public String message;
+    private EditText mNameEditText; //the name of the group edit text
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
 
@@ -28,6 +30,7 @@ public class AddGroup extends AppCompatActivity {
         mAdapter=ArrayAdapter.createFromResource(this,R.array.course_names,android.R.layout.simple_spinner_item);
         mAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mSpinner.setAdapter(mAdapter);
+        mNameEditText = (EditText)findViewById(R.id.GroupnameeditText);
 
         mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -45,7 +48,12 @@ public class AddGroup extends AppCompatActivity {
         mAddGroupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToGroupView();
+                Group newGroup = new Group(mNameEditText.getText().toString(),"GS 119","7:30pm" , "CEN4010");
+               //FOR NOW i WILL REMOVE THIS OPTION
+
+                //getting errors so i have to rethink the button
+
+                // goToGroupView();
             }
         });
 
@@ -54,7 +62,8 @@ public class AddGroup extends AppCompatActivity {
     private void goToGroupView()
     {
         Intent intent = new Intent(this,GroupPage.class);
-        intent.putExtra(EXTRA_MESSAGE,message);
+        Group newGroup = new Group(mNameEditText.getText().toString(),"GS 119","7:30pm","CEN4010");
+        intent.putExtra(EXTRA_MESSAGE,newGroup);
         startActivity(intent);
     }
 

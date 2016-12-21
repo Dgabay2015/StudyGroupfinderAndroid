@@ -16,11 +16,18 @@ public class ClassesViewer extends AppCompatActivity {
     ArrayAdapter<CharSequence> mAdapter;
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     public String message;
+    //dummy username
+    private String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classes_viewer);
+        //get intent
+        Intent intent = getIntent();
+        userName = intent.getStringExtra(MainActivity.EXTRA_USER);
+
+
         mSpinner=(Spinner)findViewById(R.id.allClassesspinner);
         mAdapter=ArrayAdapter.createFromResource(this,R.array.course_names,android.R.layout.simple_spinner_item);
         mAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
