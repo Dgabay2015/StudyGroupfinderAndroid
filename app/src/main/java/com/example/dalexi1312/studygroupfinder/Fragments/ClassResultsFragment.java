@@ -7,14 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.dalexi1312.studygroupfinder.Group;
 import com.example.dalexi1312.studygroupfinder.R;
+import com.example.dalexi1312.studygroupfinder.adapters.ListAdapter;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class ClassResultsFragment extends Fragment {
-
 
     public ClassResultsFragment() {
         // Required empty public constructor
@@ -26,6 +27,8 @@ public class ClassResultsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_class_results, container, false);
+
+
     }
 
 }

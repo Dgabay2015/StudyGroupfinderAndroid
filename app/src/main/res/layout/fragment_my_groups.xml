@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                tools:context="com.example.dalexi1312.studygroupfinder.adapters.MyGroupsFragment"
+                android:layout_height="475dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/displayAmountOfGroupsInTextView"
+        android:text="1 Group in 1 Class"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/displayAmountOfGroupsInTextView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/myGroupsListView"
+        android:layout_height="300dp"/>
+</RelativeLayout>

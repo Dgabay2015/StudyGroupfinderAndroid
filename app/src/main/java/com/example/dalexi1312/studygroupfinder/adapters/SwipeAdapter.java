@@ -19,8 +19,8 @@ public class SwipeAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
       ClassResultsFragment f1 = new ClassResultsFragment();
-       // BlankFragment f1 = new BlankFragment();
-        FragmentSignUp f2 = new FragmentSignUp();
+       // MyGroupsFragment f1 = new MyGroupsFragment();
+        MyGroupsFragment f2 = new MyGroupsFragment();
         ProfileFragment fragment = new ProfileFragment();
         Fragment[] fragmentArray = {f1,f2,fragment};
 

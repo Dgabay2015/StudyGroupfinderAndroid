@@ -102,7 +102,7 @@
         android:ems="10"
         android:id="@+id/editText2"
         android:hint="Software Engineering  - CEN4010"
-        android:layout_above="@+id/showClassNameTextView"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
 
