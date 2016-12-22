@@ -28,6 +28,9 @@ public class GroupPage extends AppCompatActivity {
     @BindView(R.id.GroupIconImageView) ImageView mgroupIconImageView;
     @BindView(R.id.groupmemberslhereTextView) TextView mGroupMembersTextView;
     @BindView(R.id.groupNameTextView) TextView mTextViewForGroupName;
+    public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    public final static String EXTRA_GROUP = "EXTRA GROUP";
+    public final static String EXTRA_POS = "EXTRA POS";
 
     private String members;
 
@@ -62,16 +65,18 @@ public class GroupPage extends AppCompatActivity {
         mJoinGroupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToBrowseAndBeginTab();
+
+                goToBrowseAndBeginTab(groupPositionInArray);
             }
         });
 
 
     }
-    private void goToBrowseAndBeginTab()
+    private void goToBrowseAndBeginTab(int groupPositionInArray)
     {
         Intent intent = new Intent(this,BlankActivityUsedToDisplayFragments.class);
         //intent.putExtra(EXTRA_USER,userName);
+        intent.putExtra(EXTRA_POS,groupPositionInArray);//this passes position
 
         startActivity(intent);
     }

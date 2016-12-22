@@ -1,6 +1,7 @@
 package com.example.dalexi1312.studygroupfinder.adapters;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -30,6 +31,7 @@ public class MyGroupsFragment extends Fragment {
     Group[] mGroups = {
             mGroupTest,mGroupTest1,mGroupTest2,mGroupTest3,mGroupTest4,mGroupTest5
     };
+    Group[] mGroups2;
     private ListView mListViewOfGroupsJoined; //will be the list og groups you can be a part of based on yor class selection
 
     public MyGroupsFragment() {
@@ -43,6 +45,7 @@ public class MyGroupsFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootview= inflater.inflate(R.layout.fragment_my_groups, container, false);
         mListViewOfGroupsJoined = (ListView)rootview.findViewById(R.id.myGroupsListView);
+
         ListAdapter adapter = new ListAdapter(rootview.getContext(),mGroups);
         mListViewOfGroupsJoined.setAdapter(adapter);
 
