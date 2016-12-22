@@ -13,39 +13,6 @@
     tools:context="com.example.dalexi1312.studygroupfinder.MainActivity">
 
 
-    <Button
-        android:text="Sign in"
-
-        android:layout_height="wrap_content"
-        android:id="@+id/signInButton"
-        android:layout_width="200dp"
-        android:background="@drawable/button_circular"
-        android:height="20dp"
-        android:radius="480dp"
-        android:layout_above="@+id/facebookImageButton"
-        android:layout_alignLeft="@+id/facebookImageButton"
-        android:layout_alignStart="@+id/facebookImageButton"
-        android:layout_alignRight="@+id/signUpButton"
-        android:layout_alignEnd="@+id/signUpButton"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/fauogo"
-        android:id="@+id/imageView4"
-        android:layout_marginBottom="24dp"
-        android:layout_above="@+id/schoolNameTextView"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:text="22 Groups"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/amountOfGroupsTextView"
-        android:layout_marginBottom="32dp"
-        android:layout_above="@+id/chooseSignInButton"
-        android:layout_centerHorizontal="true"/>
-
     <ImageButton
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -55,27 +22,12 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"/>
 
-    <Button
-        android:text="Sign up"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signUpButton"
-        android:background="@android:color/white"
-        android:radius="480dp"
-        android:layout_marginBottom="172dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp"
-        android:layout_above="@+id/signInButton"
-        android:layout_alignLeft="@+id/amountOfGroupsTextView"
-        android:layout_alignStart="@+id/amountOfGroupsTextView">
-    </Button>
-
-    <TextView
-        android:text="FAU"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/schoolNameTextView"
-        android:layout_above="@+id/amountOfGroupsTextView"
+        app:srcCompat="@drawable/fauogo"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
 
     <Button
@@ -83,21 +35,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chooseSignInButton"
-        android:background="@android:color/white"
+        android:background="@drawable/small_circ_but"
         android:textColor="@color/faublue"
         android:paddingTop="0dp"
-        android:layout_alignBaseline="@+id/signUpButton"
-        android:layout_alignBottom="@+id/signUpButton"
+        android:layout_below="@+id/imageView4"
         android:layout_toLeftOf="@+id/amountOfGroupsTextView"
-        android:layout_toStartOf="@+id/amountOfGroupsTextView"/>
+        android:layout_toStartOf="@+id/amountOfGroupsTextView"
+        android:layout_marginTop="64dp"/>
+
+    <Button
+        android:text="Sign up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseSignUpButton"
+        android:background="@drawable/small_circ_but"
+        android:radius="480dp"
+        android:layout_alignBaseline="@+id/chooseSignInButton"
+        android:layout_alignBottom="@+id/chooseSignInButton"
+        android:layout_toRightOf="@+id/schoolNameTextView"
+        android:layout_toEndOf="@+id/schoolNameTextView">
+    </Button>
+
+    <TextView
+        android:text="22 Groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountOfGroupsTextView"
+        android:layout_above="@+id/chooseSignUpButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/faublue"/>
+
+    <TextView
+        android:text="FAU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/schoolNameTextView"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/faublue"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="175dp"
-        android:layout_above="@+id/signInButton"
+        android:id="@+id/fragmentContainer"
+        android:layout_below="@+id/chooseSignInButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/fragmentContainer">
+        android:layout_height="200dp">
 
     </RelativeLayout>
 

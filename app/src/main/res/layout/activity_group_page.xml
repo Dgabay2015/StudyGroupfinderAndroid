@@ -91,4 +91,14 @@
         android:layout_alignLeft="@+id/meetUpTimeTextView"
         android:layout_alignStart="@+id/meetUpTimeTextView"/>
 
+    <Button
+        android:text="Join Group"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/joinGroupButton"
+        android:textColor="@color/faublue"
+        android:background="@drawable/small_circ_but"
+        android:layout_width="175dp"/>
+
 </RelativeLayout>

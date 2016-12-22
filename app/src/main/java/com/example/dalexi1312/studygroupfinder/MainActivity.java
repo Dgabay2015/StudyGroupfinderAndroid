@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG=MainActivity.class.getSimpleName();
     //@BindView (R.id.usernameEditText) EditText mSignInEditText;
     //button that proceeeds to next page once clicked
-    @BindView(R.id.signInButton) Button mSignInButton;
+    //@BindView(R.id.signInButton) Button mSignInButton;
     @BindView(R.id.chooseSignInButton) Button mChooseSignInButton;
-    @BindView(R.id.signUpButton) Button mChooseSignUpButton;
+    @BindView(R.id.chooseSignUpButton) Button mChooseSignUpButton;
     //should display amount of groups in particular school
     @BindView(R.id.amountOfGroupsTextView) TextView mAmountOfGroups;
     public String  userName;
@@ -104,13 +104,13 @@ public class MainActivity extends AppCompatActivity {
                     .show();
         }
 
-        mSignInButton.setOnClickListener(new View.OnClickListener() {
+/*        mSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 goToClassesView();
             }
-        });
+        });*/
         // the code below is responsible for changing the color of the text when you switch from sign in to sign up
 
         //implementing username/sign up frag
@@ -195,13 +195,13 @@ return isAvailable;
         mGroupTest.setMeetingTimes("5:30pm");
     }
 
-    private void goToClassesView()
+/*    private void goToClassesView()
     {
         Intent intent = new Intent(this,ClassesViewer.class);
         intent.putExtra(EXTRA_USER,userName);
 
         startActivity(intent);
-    }
+    }*/
     private void alertUserAboutError(){
         AlertDialogFragment dialog =new AlertDialogFragment();
         dialog.show(getFragmentManager(),"error_dialog");

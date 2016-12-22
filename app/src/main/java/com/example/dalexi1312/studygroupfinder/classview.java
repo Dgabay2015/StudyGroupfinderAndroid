@@ -60,9 +60,9 @@ public class Classview extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classview);
 
-        mViewPager = (ViewPager)findViewById(R.id.view_pager);
+/*        mViewPager = (ViewPager)findViewById(R.id.view_pager);
         SwipeAdapter swipeAdapter = new SwipeAdapter(getSupportFragmentManager());
-        mViewPager.setAdapter(swipeAdapter);
+        mViewPager.setAdapter(swipeAdapter);*/
 
         mTabLayout = (TabLayout)findViewById(R.id.tabLayout);
         mTabLayout.setupWithViewPager(mViewPager);

@@ -2,44 +2,42 @@ package com.example.dalexi1312.studygroupfinder;
 
 import android.content.Intent;
 import android.os.Parcelable;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dalexi1312.studygroupfinder.Fragments.PageFragment;
+
+import org.w3c.dom.Text;
+
 import java.util.Arrays;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class GroupPage extends AppCompatActivity {
-    TextView mTextViewForGroupName;
-    TextView mMeetupLocationTextView;
     private Group[] mGroups;
-    private ImageView mgroupIconImageView;
-    private TextView mGroupMembersTextView;
-    private TextView mMeetUpTimeTextView;
+    @BindView(R.id.joinGroupButton) Button mJoinGroupButton;
+    //@BindView(R.id.testingIconImageView) ImageView mTestImageView;
+    @BindView(R.id.meetUpTimeTextView) TextView mMeetUpTimeTextView;
+    @BindView(R.id.meetUpSpotTextView ) TextView mMeetupLocationTextView;
+    @BindView(R.id.GroupIconImageView) ImageView mgroupIconImageView;
+    @BindView(R.id.groupmemberslhereTextView) TextView mGroupMembersTextView;
+    @BindView(R.id.groupNameTextView) TextView mTextViewForGroupName;
 
     private String members;
-
-
-
-
-    ImageView mTestImageView;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_page);
-        mTestImageView= (ImageView)findViewById(R.id.testingIconImageView);//declaring all views in activity
-        mMeetupLocationTextView=(TextView)findViewById(R.id.meetUpSpotTextView);
-        mgroupIconImageView = (ImageView)findViewById(R.id.GroupIconImageView) ;
-        mGroupMembersTextView= (TextView ) findViewById(R.id.groupmemberslhereTextView);
-        mMeetUpTimeTextView = (TextView)findViewById(R.id.meetUpTimeTextView);
-
-
+        ButterKnife.bind(this);
 
        // createTestGroup();
-        mTextViewForGroupName=(TextView)findViewById(R.id.groupNameTextView);
         Intent intent = getIntent();
         final String message = intent.getStringExtra(Classview.EXTRA_MESSAGE);
 
@@ -61,7 +59,20 @@ public class GroupPage extends AppCompatActivity {
         //should set group icon here
       // mgroupIconImageView.setImageResource(getDrawable(mGroups[groupPositionInArray].getGravatar()));
         mgroupIconImageView.setImageResource(R.drawable.slackgrav1);
+        mJoinGroupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToBrowseAndBeginTab();
+            }
+        });
 
 
+    }
+    private void goToBrowseAndBeginTab()
+    {
+        Intent intent = new Intent(this,BlankActivityUsedToDisplayFragments.class);
+        //intent.putExtra(EXTRA_USER,userName);
+
+        startActivity(intent);
     }
 }

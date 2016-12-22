@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import com.example.dalexi1312.studygroupfinder.Fragments.ClassResultsFragment;
 import com.example.dalexi1312.studygroupfinder.Fragments.FragmentSignUp;
 import com.example.dalexi1312.studygroupfinder.Fragments.PageFragment;
+import com.example.dalexi1312.studygroupfinder.Fragments.ProfileFragment;
 
 public class SwipeAdapter extends FragmentStatePagerAdapter {
 
@@ -20,7 +21,7 @@ public class SwipeAdapter extends FragmentStatePagerAdapter {
       ClassResultsFragment f1 = new ClassResultsFragment();
        // BlankFragment f1 = new BlankFragment();
         FragmentSignUp f2 = new FragmentSignUp();
-        Fragment fragment = new PageFragment();
+        ProfileFragment fragment = new ProfileFragment();
         Fragment[] fragmentArray = {f1,f2,fragment};
 
 

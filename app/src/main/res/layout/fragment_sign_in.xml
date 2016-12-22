@@ -8,7 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="175dp">
+        android:layout_height="200dp">
 
         <EditText
             android:layout_width="match_parent"
@@ -17,10 +17,23 @@
             android:ems="10"
             android:id="@+id/usernameEditText"
             android:hint="Enter UserName"
+            android:layout_marginTop="20dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="34dp"/>
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:text="Sign in"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/ signInButtonForFragment"
+            android:background="@drawable/button_circular"
+            android:height="20dp"
+            android:radius="480dp"
+            android:layout_width="225dp"
+            android:layout_below="@+id/passwordEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -28,9 +41,8 @@
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/passwordEditText"
-            android:layout_marginTop="19dp"
             android:hint="Password"
-            android:layout_below="@+id/usernameEditText"
+            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"/>
     </RelativeLayout>

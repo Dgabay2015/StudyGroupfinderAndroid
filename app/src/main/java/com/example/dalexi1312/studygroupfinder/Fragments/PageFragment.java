@@ -19,7 +19,8 @@ import butterknife.ButterKnife;
  */
 public class PageFragment extends Fragment {
     //@BindView(R.id.myGroupsTitle) TextView mTitleOfMyGroups;
-    TextView mTextViewOfTitle;
+   // TextView mTextViewOfTitle;
+
 
 
     public PageFragment() {
@@ -33,10 +34,10 @@ public class PageFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_page,container,false);
 
-        mTextViewOfTitle = (TextView)view.findViewById(R.id.myGroupsTitle);
+     //   mTextViewOfTitle = (TextView)view.findViewById(R.id.myGroupsTitle);
         Bundle bundle= getArguments();
-        String message = Integer.toString(bundle.getInt("count"));
-        mTextViewOfTitle.setText("This is the "+message+"Swipe view of page");
+      //  String message = Integer.toString(bundle.getInt("count"));
+      //  mTextViewOfTitle.setText("This is the "+message+"Swipe view of page");
         // Inflate the layout for this fragment
         return view;
     }
